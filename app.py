@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from dotenv import load_dotenv
 from routes.auth import auth_routes
 from routes.user import user_routes
+from routes.vacancy import vacancy_routes
 from starlette.responses import RedirectResponse
 
 app = FastAPI()
@@ -12,4 +13,5 @@ def read_root():
 
 app.include_router(auth_routes, prefix="/api") 
 app.include_router(user_routes, prefix="/api")
+app.include_router(vacancy_routes, prefix="/api")
 load_dotenv()   

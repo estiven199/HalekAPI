@@ -50,3 +50,10 @@ class VerifyTokenRoute(APIRoute):
             else:
                 return validation_response
         return verify_token_middleware
+
+
+def requirements(skills_vc,skills_user):
+    dic_skill_vc = { k:v for skill in skills_vc for k,v in skill.items()  }
+    dic_skill_user = { k:v for skill in skills_user for k,v in skill.items()  }
+    val = [ int(dic_skill_user[skill]) / int(dic_skill_vc[skill]) if skill in dic_skill_user else 0 for skill in dic_skill_vc.keys()]
+    return sum(val) / len(val)
