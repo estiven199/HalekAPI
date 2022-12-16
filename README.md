@@ -9,7 +9,7 @@ Cada recurso se expone como una URL. La URL de cada recurso se puede obtener acc
 
 ## Índice 
 
-- [Preparacion](#instalación)
+- [Preparacion](#preparacion)
 - [Instalación](#instalación)
 - [Uso](#uso)
 
@@ -19,6 +19,8 @@ Cada recurso se expone como una URL. La URL de cada recurso se puede obtener acc
 - Asegúrese de que exista un archivo llamado `.env`donde deberá estar una variable con el siguiente formato y valor: ``` export SECRET='ZQeOwY6pNusL_xnUV_2i2g5F6BhYFaoL4mt9pB5ANw8='```
 
 ## Instalación
+
+-Clonar el proyecto en la maquina localmente. [Clonar un repositorio ](https://docs.github.com/es/repositories/creating-and-managing-repositories/cloning-a-repository)
 
 Ejecute los siguiente comandos:
 
@@ -60,9 +62,6 @@ En este enpoint se va ha generar un token del tipo bearer token: **Estos token t
 Para utilizar los diferentes endpoints de la API, exceptuando `/api/generate_token`,  es `requerido` utilizar para cada una de ellas el `headers authorization` y pasarle un token.
 
 
- [documentación oficial del API ](https://fastapimongo-43tleytuxq-uc.a.run.app)
+ [documentación oficial de la API ](https://fastapimongo-43tleytuxq-uc.a.run.app)
 
 
-## Pruebas
-
-Vaya un paso más allá y escriba pruebas para su aplicación. Luego, proporcione ejemplos sobre cómo ejecutarlas aquí.
