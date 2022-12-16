@@ -64,4 +64,6 @@ Para utilizar los diferentes endpoints de la API, exceptuando `/api/generate_tok
 
  [documentación oficial de la API ](https://fastapimongo-43tleytuxq-uc.a.run.app)
 
+Dado un user, para conocer las vacantes que podrían ajustarse a su perfil, se debe utilizar el endpoint GET /api/searches_vacancies/{user_id}, solo basta con pasarle el user_id y este genera las vancantes compatibles.
+
 
